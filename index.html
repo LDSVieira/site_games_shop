@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Shop - A sua loja de games.</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Nunito:wght@1000&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!--essa div com esse .container vai permitir lá no 
+        main.css eu alinhar todos os textos (títulos e links) dentro deste header-->
+            <h1>GAMES SHOP</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about">Sobre a loja</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="about">
+        <!--Essa seção é a seção "sobre a loja"-->
+        <div class="container">
+            <img class="store_front" src="./Game Store frente de loja.jpg" alt="Fachada da Game Shop">
+            <div>
+                <h2>Sobre a loja</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis veniam delectus qui doloribus
+                    placeat error neque eaque at suscipit pariatur, expedita earum natus, necessitatibus corrupti non
+                    animi, quas similique.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatum itaque molestias
+                    magnam voluptatibus. Debitis cupiditate incidunt, inventore non quo voluptas officia, nulla quia,
+                    explicabo itaque eveniet nisi aut repellat.
+                </p>
+                <ul class="brands_list">
+                    <!--imagens das marcas dos games-->
+                    <li>
+                        <img src="./logo_nitendo.png" alt="logo da nitendo">
+                    </li>
+                    <li>
+                        <img src="./logo_play_station.png" alt="logo da play station">
+                    </li>
+                    <li>
+                        <img src="./logo_xbox.png" alt="logo da x box">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <!--essa seção é a do contato, redes sociais e endereço-->
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contact_methods">
+                <div>
+                    <!--div dos contatos-->
+                    <h3>Fale conosco</h3>
+                    <form>
+                        <input type="text" placeholder="Seu nome" required />
+                        <input type="email" placeholder="Seu e-mail" required />
+                        <input type="tel" placeholder="Seu telefone (opicional)" />
+                        <textarea placeholder="Sua mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <!--div das redes sociais-->
+                    <h3>Nos acompanhe</h3>
+                    <ul class="social_links">
+                        <li>
+                            <a href="#" title="Siga-nos no Instagram">
+                                <img src="./Logo transparente do Instagram.png"
+                                    alt="Logo transparente do Instagram"></a>
+                        </li>
+                        <li>
+                            <a href="#" title="Siga-nos no Facebook">
+                                <img src="./Logo transparente do Facebook.png" alt="Logo transparente do Facebook"></a>
+                        </li>
+                        <li>
+                            <a href="#" title="Visite nosso canal no YouTube">
+                                <img src="./Logo transparente do YouTube.png" alt="Logo transparente do Youtube"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <!--div do endereço-->
+                    <h3>Venha até nós</h3>
+                    <p>
+                        Rua JavaScript, nº 000, Bairro HTML, Caucaia-CE.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; Games Shop - Todos os direitos reservados - 2022
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

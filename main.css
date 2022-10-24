@@ -1,0 +1,201 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+    /*font-weight especifica o peso ou a intensidade da fonte (ex.: negrito)*/
+}
+
+header h1 {
+    font-size: 40px;
+    /*font-size é usada para indicar o tamanho da letra(fonte) em CSS*/
+}
+
+body,
+input,
+textarea {
+    font-family: 'Roboto', sans-serif;
+    /*essa fonte acima é do google fonts*/
+}
+
+header {
+    padding: 16px 0px;
+    /*padding define uma distância entre o conteúdo de um elemento e suas bordas.
+    Eu tb poderia definir uma distância para cada lado separadamente
+    ( padding-top , padding-right , padding-bottom , padding-left )*/
+    background-color: rgb(10, 10, 10);
+    color: rgb(252, 12, 192);
+}
+
+header a {
+    /*aqui é a estilização de cada link (sobre a loja e contato) individualmente*/
+    color: rgb(252, 12, 192);
+    /*cor dos links*/
+    text-decoration: none;
+    /*tira os tracinhos do links*/
+    font-size: 20px;
+    /*tamanho da fonte do link*/
+}
+
+header nav li {
+    /*aqui é a estilização de um link em relação a outro*/
+    display: inline;
+    /*os links lado a lado um relação ao outro (mas não ficam 100% alinhados)
+    o comando align-items: center; dentro do .container fará isso*/
+    margin-left: 16px;
+    /*distância entre eles*/
+}
+
+.container {
+    /*aqui a gente estiliza as informações dentro do container*/
+    max-width: 1280px;
+    /*este container vai ter no máximo esta largura*/
+    width: 100%;
+    /*obedecendo o máximo acima a largura deste container preencherá 100% do espaço*/
+    margin: 0 auto;
+    /*esse comando vai centralizar o conteúdo do container*/
+}
+
+header .container {
+    /*aqui a gente estiliza o container em relação ao header*/
+    display: flex;
+    /*colocar título e links lado a lado */
+    align-items: center;
+    /*centralizar título e links na vertical (ficam 100% alinhados)*/
+    justify-content: space-between;
+    /*colocar o título na extrema esquerda e os links na extrema direita*/
+}
+
+.social_links img {
+    height: 36px;
+    /*aqui trata-se das imagens das redes sociais*/
+    /*A propriedade height determina a altura da área do conteúdo de um elemento. 
+    As propriedades min-height e max-height sobrepõem a height*/
+    margin-right: 8px;
+}
+
+.social_links li a {
+    text-decoration: none;
+    /*tira "pontinho" que estava indesejado das figuras das redes sociais*/
+}
+
+.brands_list img {
+    height: 50px;
+    /*A propriedade height (altura) determina a altura da área do conteúdo de um elemento.
+    As propriedades min-height e max-height sobrepõem a height .*/
+}
+
+.brands_list li {
+    display: inline;
+    /*display vai mostrar como serão exibidos os conteúdos solicitados na tela do navegador*/
+}
+
+section .container {
+    /*aqui a gente estiliza o container em relação ao header*/
+    display: flex;
+    /*colocar título e links lado a lado */
+    align-items: flex-start;
+    /*centralizar título e links na vertical (ficam 100% alinhados)*/
+    justify-content: space-between;
+    /*colocar o título na extrema esquerda e os links na extrema direita*/
+}
+
+section {
+    padding: 16px;
+    /*espaço entre o conteúdo da seção e a borda*/
+    color: rgb(107, 88, 105);
+    /*cor do texto na seção*/
+    background-color: rgba(234, 200, 235, 0.373)
+        /*cor do fundo na seção*/
+}
+
+section h2,
+h3 {
+    margin-bottom: 16px;
+    /*"margem de baixo" é o espaço entre o título h2 "sobre a loja" e o "p" parágrafo*/
+}
+
+section p {
+    margin-bottom: 8px;
+    /*margem de baixo" é o espaço entre um parágrafo e outro e entre os logotipos*/
+}
+
+/*section img {
+    se eu fizesse para acrescentar um distanciamento a margem da direita
+    esse distaciamento seria aplicado em todas as imagens desta seção e eu só quero aplicar na imagem maior.
+    Então devo criar uma classe para a imagem que quero acrescentar essa margem a direita.
+    margin-right: 16px;
+}*/
+
+.store_front {
+    /*aqui criei uma classe só para a imagem principal do site e apliquei um espaçamento a direita*/
+    margin-right: 16px;
+}
+
+.social_links li {
+    display: inline;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact_methods {
+    display: flex;
+    justify-content: space-between;
+    /*separa em distancias iguais (fale conosco/nos acompanhe/venha até nós)*/
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    /*width = largura*/
+    margin-bottom: 8px;
+    /*margin = espaçamento entre a borda e o limite da tela do computador ou outro elemento*/
+    padding: 8px;
+    /*padding = margem interna = espaçamento entre o conteúdo/texto e a borda*/
+}
+
+form textarea {
+    resize: none;
+    /*a propriedade acima se refere a redimencionar ou não a caixa de texto*/
+    height: 180px;
+    /*heigth = altura*/
+}
+
+    form button{
+        background: rgb(10, 10, 10);
+        /*cor do fundo do botão enviar*/
+        color:  rgb(252, 12, 192);
+        /*cor do texto do botão enviar*/
+        border: none;
+        /*tira borda */
+        cursor: pointer;
+        /*quando o usuário passar o mouse em cima ele vira uma mãozinha*/
+    }
+
+    form button:hover {
+        /*o comando acima faz o botão mudar de cor quando o mouse for passado em cima*/
+        background: rgb(107, 88, 105);
+        /*cor do botão quando ativado */
+    }
+
+    input :focus,
+    textarea :focus {
+        outline-color: rgb(107, 88, 105);
+    }
+
+    footer {
+        background: rgb(10, 10, 10);
+        color:  rgb(252, 12, 192);
+        padding: 24px 0px;
+    }
